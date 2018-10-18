@@ -8,14 +8,15 @@ public class Drag_Drop : MonoBehaviour, IDragHandler, IEndDragHandler
 {
 
 
-    public Image PH;
+   // public Image PH;
+    public GameObject PH; 
     
-    public Sprite PHPaper;
+  //  public Sprite PHPaper;
    
 
     public void awake ()
     {
-        PH = GetComponent<Image>();
+    //   PH = GetComponent<Sprite>();
       
     }
         
@@ -23,8 +24,8 @@ public class Drag_Drop : MonoBehaviour, IDragHandler, IEndDragHandler
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = eventData.position;
-        PH.gameObject.SetActive(true);
-        PH.sprite = PHPaper;
+     //   PH.gameObject.SetActive(true);
+     //   PH.sprite = PHPaper;
        
         }
 
